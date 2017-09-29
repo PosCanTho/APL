@@ -4,7 +4,7 @@
 target 'AntiPlagiarism' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-pod 'HandyJSON', '~> 1.8.0'
+pod ‘Charts’
   # Pods for AntiPlagiarism
 	
 end

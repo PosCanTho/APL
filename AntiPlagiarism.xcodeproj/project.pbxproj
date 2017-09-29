@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FD163436F83F6AA3B60BA9C /* Pods_AntiPlagiarism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CAFE2A677267873C196B8A /* Pods_AntiPlagiarism.framework */; };
 		A40DD6311F78A477005877CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DD6301F78A477005877CA /* AppDelegate.swift */; };
 		A40DD6331F78A477005877CA /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40DD6321F78A477005877CA /* LoginController.swift */; };
 		A40DD6361F78A477005877CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40DD6341F78A477005877CA /* Main.storyboard */; };
@@ -86,6 +87,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80CAFE2A677267873C196B8A /* Pods_AntiPlagiarism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntiPlagiarism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3C10DC11E4609E0D85E28F /* Pods-AntiPlagiarism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiPlagiarism.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntiPlagiarism/Pods-AntiPlagiarism.release.xcconfig"; sourceTree = "<group>"; };
 		A40DD62D1F78A477005877CA /* AntiPlagiarism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntiPlagiarism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40DD6301F78A477005877CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A40DD6321F78A477005877CA /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 		A480D5181F7A5DC400135548 /* PresentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentController.swift; sourceTree = "<group>"; };
 		A480D51A1F7A5E7700135548 /* NavigationThesisController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationThesisController.swift; sourceTree = "<group>"; };
 		A480D51D1F7B2F9A00135548 /* ThesisCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThesisCell.swift; sourceTree = "<group>"; };
+		D79998505ED3FF3A6FDB4A6F /* Pods-AntiPlagiarism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiPlagiarism.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntiPlagiarism/Pods-AntiPlagiarism.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,17 +178,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD163436F83F6AA3B60BA9C /* Pods_AntiPlagiarism.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30EE777004FF94F968949E07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D79998505ED3FF3A6FDB4A6F /* Pods-AntiPlagiarism.debug.xcconfig */,
+				8E3C10DC11E4609E0D85E28F /* Pods-AntiPlagiarism.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6852AA3AD26DE766C32A4259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80CAFE2A677267873C196B8A /* Pods_AntiPlagiarism.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A40DD6241F78A477005877CA = {
 			isa = PBXGroup;
 			children = (
 				A40DD62F1F78A477005877CA /* AntiPlagiarism */,
 				A40DD62E1F78A477005877CA /* Products */,
+				30EE777004FF94F968949E07 /* Pods */,
+				6852AA3AD26DE766C32A4259 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -402,9 +426,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A40DD63F1F78A477005877CA /* Build configuration list for PBXNativeTarget "AntiPlagiarism" */;
 			buildPhases = (
+				828BB3F9284E2AB75ACDF340 /* [CP] Check Pods Manifest.lock */,
 				A40DD6291F78A477005877CA /* Sources */,
 				A40DD62A1F78A477005877CA /* Frameworks */,
 				A40DD62B1F78A477005877CA /* Resources */,
+				21A9BF6DECEF529E037D543E /* [CP] Embed Pods Frameworks */,
+				1FFB9E0EE308326DE3F32A71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -463,6 +490,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FFB9E0EE308326DE3F32A71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntiPlagiarism/Pods-AntiPlagiarism-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21A9BF6DECEF529E037D543E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntiPlagiarism/Pods-AntiPlagiarism-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		828BB3F9284E2AB75ACDF340 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A40DD6291F78A477005877CA /* Sources */ = {
@@ -661,6 +736,7 @@
 		};
 		A40DD6401F78A477005877CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79998505ED3FF3A6FDB4A6F /* Pods-AntiPlagiarism.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4TRAUUVPN4;
@@ -676,6 +752,7 @@
 		};
 		A40DD6411F78A477005877CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E3C10DC11E4609E0D85E28F /* Pods-AntiPlagiarism.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4TRAUUVPN4;
